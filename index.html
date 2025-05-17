@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <title>MotoNova</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MotoNova</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarsExampleDefault"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Anasayfa
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features"
+                >Özellikler
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                >Hakkımızda
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop"
+                >Alışveriş
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html"
+                >İletişim
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <div class="wellcome">
+          <div class="wellcomeMsg">
+            <div class="headTag">MotoNova</div>
+            <div class="subTag">
+              Gücü hissedin, teknolojiyi sürün! Yeni nesil motorlarla
+              performans, hız ve konfor artık aynı yolda buluşuyor.
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        id="progressBar"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 5px;
+          background: #ff3300b7;
+          width: 0%;
+          z-index: 9999;
+        "
+      ></div>
+
+      <section id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sectionHead">Öne Çıkan Özellikler</div>
+              <hr />
+              <br />
+            </div>
+
+            <div class="col-md-3">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-wrench" aria-hidden="true"></i>
+                </div>
+                <h4>Servis ve Bakım</h4>
+                <p>
+                  Motosikletinizin ihtiyaç duyduğu tüm bakım ve onarım işlemleri
+                  uzman ekibimiz tarafından titizlikle yapılır.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-clock" aria-hidden="true"></i>
+                </div>
+                <h4>Hız ve Performans</h4>
+                <p>
+                  Yüksek performanslı motorlarımızla yollarda fark yaratın.
+                  Sürüş deneyiminiz maksimum seviyede olsun!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                </div>
+                <h4>Yedek Parça</h4>
+                <p>
+                  Tüm marka ve modeller için orijinal yedek parça temini.
+                  Motorunuz her zaman ilk günkü gibi çalışsın.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa-solid fa-motorcycle" aria-hidden="true"></i>
+                </div>
+                <h4>Lastik Satışı</h4>
+                <p>
+                  Her yol koşuluna uygun motosiklet lastikleri. Güvenli ve
+                  konforlu sürüş için kaliteli lastikler sizi bekliyor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row position-relative">
+            <div
+              class="col-lg-7 about-img"
+              style="background-image: url(img/about.jpg)"
+            ></div>
+
+            <div class="col-lg-7">
+              <h2>Tutku, Güç ve Yolculuk</h2>
+              <div class="our-story">
+                <h4>Kuruluş: 1988</h4>
+                <h3>Biz Kimiz?</h3>
+                <p>
+                  1988 yılından bu yana motor tutkunları için en kaliteli
+                  hizmeti sunuyoruz. Yola çıktığımız ilk günden beri
+                  güvenilirlik, performans ve müşteri memnuniyetini ön planda
+                  tutuyoruz.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span
+                      >Her marka için profesyonel servis ve bakım hizmeti</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span
+                      >Orijinal yedek parça ve kaliteli lastik seçenekleri</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Motosiklet satışında güvenilir ve şeffaf süreç</span>
+                  </li>
+                </ul>
+                <p>
+                  Yılların verdiği tecrübe ve motor sevgisiyle, sizlere sadece
+                  bir hizmet değil, bir yaşam tarzı sunuyoruz. Motosiklet sadece
+                  bir araç değil, bir tutkudur!
+                </p>
+
+                <div
+                  class="watch-video d-flex align-items-center position-relative"
+                >
+                  <i class="bi bi-play-circle"></i>
+                  <a
+                    href="https://www.youtube.com/watch?v=BVdhujqWrYs"
+                    target="_blank"
+                    class="glightbox stretched-link"
+                    >Tanıtım Videomuzu İzleyin</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="parallex-section">
+        <div class="parallex" id="parallex-set-1"></div>
+      </section>
+
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Ekibimiz</h2>
+            <p>
+              Motor tutkusunu paylaşan, deneyimli ve dinamik bir ekiple yola
+              devam ediyoruz. Servisten satışa, müşteri desteğinden teknik
+              uzmanlığa kadar her alanda sizin için buradayız.
+            </p>
+          </div>
+
+          <div class="row gy-5">
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="member-img">
+                <img
+                  src="img/team-1.jpg"
+                  class="img-fluid"
+                  alt="Ahmet Yılmaz"
+                />
+                <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Ahmet Yılmaz</h4>
+                <span>Genel Müdür</span>
+                <p>
+                  20 yıllık sektör tecrübesiyle firmamıza yön veren lider.
+                  Motosiklet tutkusunu işine yansıtıyor.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="member-img">
+                <img
+                  src="img/team-2.jpg"
+                  class="img-fluid"
+                  alt="Zeynep Karaca"
+                />
+                <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Zeynep Karaca</h4>
+                <span>Satış Müdürü</span>
+                <p>
+                  Müşterilerimize en uygun motorları bulmalarına yardımcı olan,
+                  güler yüzlü satış uzmanımız.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="member-img">
+                <img src="img/team-3.jpg" class="img-fluid" alt="Mert Demir" />
+                <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Mert Demir</h4>
+                <span>Teknik Servis Şefi</span>
+                <p>
+                  Motorunuzun güvenliği ve performansı onun ellerinde. Detaylara
+                  verdiği önemle bilinir.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="member-img">
+                <img src="img/team-4.jpg" class="img-fluid" alt="Ayşe Tunç" />
+                <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Ayşe Tunç</h4>
+                <span>Muhasebe Sorumlusu</span>
+                <p>
+                  Tüm finansal süreçleri titizlikle yöneten, çözüm odaklı
+                  muhasebe uzmanımız.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="member-img">
+                <img src="img/team-5.jpg" class="img-fluid" alt="Can Özkan" />
+                <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Can Özkan</h4>
+                <span>Pazarlama Uzmanı</span>
+                <p>
+                  Markamızın bilinirliğini artıran ve tüm kampanyaları yöneten
+                  yaratıcı ekibimizin parçası.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="member-img">
+                <img src="img/team-6.jpg" class="img-fluid" alt="Elif Aksoy" />
+                <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Elif Aksoy</h4>
+                <span>Operasyon Yöneticisi</span>
+                <p>
+                  Günlük operasyonların sorunsuz ilerlemesini sağlayan, sistemli
+                  ve disiplinli yönetici.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop">
+        <div class="container">
+          <div class="sectionHead">Mağaza</div>
+          <hr />
+          <br />
+          <div class="row">
+            <div class="col-md-3">
+              <div class="item-box">
+                <div class="item-box-img">
+                  <img src="img/bike1.jpg" />
+                </div>
+                <div class="item-box-head">Motosikletler</div>
+                <div class="item-box-sub-text">
+                  En yeni ve güçlü motosiklet modellerimizi keşfedin.
+                </div>
+                <button class="btn item-box-btn">Hemen Satın Al</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item-box">
+                <div class="item-box-img">
+                  <img src="img/helmet.jpg" />
+                </div>
+                <div class="item-box-head">Kasklar</div>
+                <div class="item-box-sub-text">
+                  Güvenliğiniz için en kaliteli kask modelleri burada!
+                </div>
+                <button class="btn item-box-btn">Hemen Satın Al</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item-box">
+                <div class="item-box-img">
+                  <img src="img/wheel.jpg" />
+                </div>
+                <div class="item-box-head">Tekerlekler</div>
+                <div class="item-box-sub-text">
+                  Performans ve dayanıklılığı bir arada sunan jant ve lastikler.
+                </div>
+                <button class="btn item-box-btn">Hemen Satın Al</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item-box">
+                <div class="item-box-img">
+                  <img src="img/clothes.jpg" />
+                </div>
+                <div class="item-box-head">Sürüş Kıyafetleri</div>
+                <div class="item-box-sub-text">
+                  Konforlu ve şık sürüş kıyafetleriyle tarzınızı yansıtın.
+                </div>
+                <button class="btn item-box-btn">Hemen Satın Al</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sectionSubHead">Yeni Gelenler</div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/moto1.jpg" alt="bike" />
+                <div class="card-footer">
+                  <p class="card-text">
+                    ₺144.300
+                    <span style="color: rgb(173, 11, 11)">( %39 indirim )</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/moto2.jpg" alt="bike" />
+                <div class="card-footer">
+                  <p class="card-text">
+                    ₺120.500
+                    <span style="color: rgb(173, 11, 11)">( %27 indirim )</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/moto3.jpg" alt="bike" />
+                <div class="card-footer">
+                  <p class="card-text">
+                    ₺210.300
+                    <span style="color: rgb(173, 11, 11)">( %32 indirim )</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/moto4.jpg" alt="bike" />
+                <div class="card-footer">
+                  <p class="card-text">
+                    ₺220.100
+                    <span style="color: rgb(173, 11, 11)">( %45 indirim )</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/moto5.jpg" alt="bike" />
+                <div class="card-footer">
+                  <p class="card-text">
+                    ₺197.000
+                    <span style="color: rgb(173, 11, 11)">( %17 indirim )</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/moto6.jpg" alt="bike" />
+                <div class="card-footer">
+                  <p class="card-text">
+                    ₺260.500
+                    <span style="color: rgb(173, 11, 11)">( %21 indirim )</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parallex-section">
+        <div class="parallex" id="parallex-set-2"></div>
+      </section>
+      <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+          <div class="sectionHead">Fiyat Listesi</div>
+          <hr />
+          <br />
+          <table class="table table-striped table-bordered price-table">
+            <thead class="thead-dark">
+              <tr>
+                <th><span>Ürün</span></th>
+                <th><span>Model</span></th>
+                <th><span>Fiyat (₺)</span></th>
+                <th><span>Stok Durumu</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova X1</span></td>
+                <td><span>134.900</span></td>
+                <td><span>Stokta</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova UrbanRider</span></td>
+                <td><span>118.500</span></td>
+                <td><span>Sınırlı Stok</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova StormX</span></td>
+                <td><span>149.000</span></td>
+                <td><span>Stokta</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova Speedster 250</span></td>
+                <td><span>126.750</span></td>
+                <td><span>Stokta Yok</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova Classic Retro</span></td>
+                <td><span>138.200</span></td>
+                <td><span>Stokta</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova TrailMaster</span></td>
+                <td><span>157.900</span></td>
+                <td><span>Sınırlı Stok</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova NightCruze</span></td>
+                <td><span>145.300</span></td>
+                <td><span>Stokta</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova StreetRunner</span></td>
+                <td><span>122.450</span></td>
+                <td><span>Stokta Yok</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova EcoRider</span></td>
+                <td><span>112.000</span></td>
+                <td><span>Stokta</span></td>
+              </tr>
+              <tr>
+                <td><span>Motosiklet</span></td>
+                <td><span>MotoNova Thunderbolt</span></td>
+                <td><span>163.800</span></td>
+                <td><span>Stokta</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="faq" class="bg-light py-5">
+        <div class="container">
+          <div class="sectionHead">Sıkça Sorulan Sorular</div>
+          <hr />
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Motosikletlerin garanti süresi ne kadar?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tüm motosikletlerimiz üretim hatalarını kapsayan 2 yıl garanti
+                ile birlikte gelir.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Satış sonrası hizmet sunuyor musunuz?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Evet, tam kapsamlı satış sonrası hizmetimiz mevcuttur. Onarım,
+                bakım ve yedek parça desteği sağlıyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Hangi ödeme yöntemlerini kabul ediyorsunuz?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Kredi kartı, banka havalesi ve kapıda ödeme gibi birçok ödeme
+                yöntemini kabul ediyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Kask ve kıyafetlerde beden değişimi yapabilir miyim?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Evet, ürün tesliminden sonraki 14 gün içinde beden değişimi
+                yapabilirsiniz.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Teslimat süresi ne kadar sürüyor?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Siparişleriniz 3-5 iş günü içerisinde adresinize teslim edilir.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Motosikletleri test etme imkânı var mı?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Evet, showroom’umuzu ziyaret ederek test sürüşü yapabilirsiniz.
+                Lütfen randevu almayı unutmayın.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="moto-gallery-section">
+        <h2>Motosiklet Galerisi</h2>
+        <div class="gallery-container">
+          <button id="oncekiBtn" class="gallery-btn">&#10094;</button>
+
+          <div class="gallery mt-3">
+            <img src="img/moto3.jpg" class="gallery-image active" />
+            <img src="img/moto1.jpg" class="gallery-image" />
+            <img src="img/moto2.jpg" class="gallery-image" />
+            <img src="img/moto4.jpg" class="gallery-image" />
+            <img src="img/moto5.jpg" class="gallery-image" />
+            <img src="img/moto6.jpg" class="gallery-image" />
+          </div>
+
+          <button id="sonrakiBtn" class="gallery-btn">&#10095;</button>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section py-5 bg-light">
+        <div class="container">
+          <div class="sectionHead text-center mb-4">Bize Ulaşın</div>
+          <hr class="mb-5" />
+
+          <div class="row">
+            <!-- İletişim Formu -->
+            <div class="col-lg-7 mb-4">
+              <h4 class="mb-4">Bize Mesaj Gönderin</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Adınız *"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-posta *"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Telefon"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Mesajınız *"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark px-4">
+                  Mesajı Gönder
+                </button>
+              </form>
+            </div>
+
+            <!-- İletişim Bilgileri -->
+            <div class="col-lg-5">
+              <h4 class="mb-4">İletişim Bilgileri</h4>
+              <ul class="list-unstyled contact-info">
+                <li>
+                  <i class="fa fa-map-marker mr-2 text-warning"></i> Moto
+                  Garage, Türkiye
+                </li>
+                <li>
+                  <i class="fa fa-phone mr-2 text-warning"></i> +90 5xx xxx xx
+                  xx
+                </li>
+                <li>
+                  <i class="fa fa-envelope mr-2 text-warning"></i>
+                  info@motonova.com
+                </li>
+                <li>
+                  <i class="fa fa-clock-o mr-2 text-warning"></i> Pazartesi -
+                  Cuma: 09:00 - 18:00
+                </li>
+              </ul>
+              <div class="map-container mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=..."
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="modernClock"></div>
+    </main>
+    <footer class="footer text-light py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5>MotoNova</h5>
+            <p id="copyright">© 2025 MotoNova. Tüm hakları saklıdır.</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5>Bizi Takip Edin</h5>
+            <a href="#" class="text-light mx-2"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="#" class="text-light mx-2"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a href="#" class="text-light mx-2"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a href="#" class="text-light mx-2"
+              ><i class="fab fa-linkedin fa-lg"></i
+            ></a>
+          </div>
+          <div class="col-md-4">
+            <h5>İletişim</h5>
+            <p><i class="fa fa-envelope"></i> info@motonova.com</p>
+            <p><i class="fa fa-phone"></i> +90 5xx xxx xx xx</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="backToTop" title="Yukarı Çık">↑</button>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <button
+      id="backToTop"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 10px 15px;
+        font-size: 16px;
+      "
+    >
+      ⬆️ Yukarı
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
